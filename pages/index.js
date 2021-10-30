@@ -35,7 +35,16 @@ function MapboxMap() {
           "source-layer": "str",
           "paint": {
               "fill-opacity": 0.6,
-              "fill-color": "rgb(53, 175, 109)",
+              "fill-color": {
+                property: 'type_zone',
+                stops: [
+                  [2, 'rgba(219, 60, 51, 1)'], 
+                  [19, 'rgba(200, 141, 176, 1)'],
+                  [20, 'rgba(197, 164, 124, 1)'],
+                  [29, 'rgba(167, 207, 159, 1)'],
+                  [31, 'rgba(147, 38, 27, 1)']
+                ]
+              },
               'fill-outline-color': 'white'
           }
       });
