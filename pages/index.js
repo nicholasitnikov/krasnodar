@@ -28,8 +28,7 @@ function MapboxMap() {
           "source": {
               "type": "vector",
               "scheme": "tms",
-              // http://62.84.119.249:8080/geoserver/krasnodar/wms?service=WMS&version=1.1.0&request=GetMap&layers=krasnodar%3Astr&bbox=38.759880065918%2C44.9751434326172%2C39.3837203979492%2C45.1954498291016&width=768&height=330&srs=EPSG%3A4326&styles=&format=application%2Fvnd.mapbox-vector-tile
-              "tiles": ["http://62.84.119.249:8080/geoserver/gwc/service/tms/1.0.0/krasnodar:str@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"],
+              "tiles": ["https://brainpain.ru/geoserver/gwc/service/tms/1.0.0/krasnodar:str@EPSG%3A900913@pbf/{z}/{x}/{y}.pbf"],
               "minzoom": 0,
               "maxzoom": 14
           },
