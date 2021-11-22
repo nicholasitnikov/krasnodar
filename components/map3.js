@@ -1,8 +1,6 @@
 import * as React from 'react';
 import {useState, useMemo, useCallback, useEffect} from 'react';
-import MapGL, {Popup, Source, Layer} from 'react-map-gl';
-import Info from './info.js';
-import Preview from './preview.js';
+import MapGL, {Source, Layer} from 'react-map-gl';
 import { geoserverSource, geoserverLayer } from "../utils/constants.js";
 
 const MAPBOX_TOKEN = 'pk.eyJ1IjoiYXNpdG5pa292IiwiYSI6ImNrbmUyaWdidTJneHcycXA5c2Q3a201aGsifQ.k6nUY_ib-JKfuhiKnzeAIg'; // Set your mapbox token here
