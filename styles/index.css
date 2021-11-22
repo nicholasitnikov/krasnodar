@@ -10,3 +10,145 @@ body,
     -webkit-font-smoothing: antialiased;
     -moz-font-smooth: grayscale;
 }
+
+.grass {
+    width: 100%;
+    height: 50px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.grass__delete {
+    background: transparent;
+    border: 1px solid dodgerblue;
+    color: dodgerblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity .3s;
+}
+
+.grass__delete:hover {
+    opacity: .7;
+}
+
+.info {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    background: white;
+    border-radius: 5px;
+    outline: none;
+    right: 20px;
+    top: 20px;
+    max-width: 300px;
+    min-height: calc(100vh - 60px - 63px);
+    max-height: calc(100vh - 60px - 63px);
+    overflow-y: scroll;
+}
+
+.info__caption {
+    text-align: center;
+    font-size: 18px;
+    padding: 0 20px;
+    color: rgb(26, 26, 26);
+}
+
+.info__item {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    padding: 26px 30px 12px;
+}
+
+.info__item:last-of-type {
+    border-bottom: none;
+}
+
+.info__heading {
+    margin: 0;
+    padding: 3px 0 10px;;
+}
+
+.info__text {
+    margin: 0;
+    padding: 0;
+}
+
+.passports-button {
+    position: fixed;
+    right: 100px;
+    bottom: 30px;
+    color: white;
+    background: dodgerblue;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+    transition: opacity .3s;
+    width: 220px;
+    height: 60px;
+}
+
+.passports-button:hover {
+    opacity: .8;
+}
+
+.passports-edit {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="dodgerblue"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>');
+    padding: 20px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    border-radius: 5px;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    height: 60px;
+    width: 60px;
+    border: none;
+    cursor: pointer;
+}
+
+.passports-save {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="dodgerblue"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /> </svg>');
+    padding: 20px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    border-radius: 5px;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    height: 60px;
+    width: 60px;
+    border: none;
+    cursor: pointer;
+}
+
+.passports-edit:hover {
+    opacity: .8;
+}
+
+.preview {
+    position: fixed;
+    position: absolute;
+    z-index: 2;
+    background: black;
+    border-radius: 5px;
+    outline: none;
+    left: 20px;
+    top: 20px;
+    bottom: 30px;
+    width: 1050px;
+    height: calc(100% - 50px);
+    border: none;
+}
+
+.myText {
+    font-family : "Arial";
+}

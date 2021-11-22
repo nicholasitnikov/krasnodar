@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+model Street {
+  idx           Int                                  @id @default(autoincrement())
+  id_6993       String?
+  group         Int?
+  class         Int?
+  district      String?
+  address       String?
+  type_zone     Int?
+  type_surf     Int?
+  type_serv     Int?
+  len_6993      Int?
+  area          Int?
+  len_curb      Int?
+  len_nocurb    Int?
+  geom          Unsupported("geometry(Geometry,4326)")?
+}
