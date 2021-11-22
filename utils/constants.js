@@ -22,15 +22,15 @@ export const geoserverLayer = {
     "paint": {
         "fill-opacity": 0.6,
         "fill-color": {
-          property: 'no',
+          property: 'id_6993_num',
           stops: [
             [0, '#8A2BE2'],
-            [5000, '#7FFF00'],
-            [10000, '#DC143C'],
-            [15000, '#FF8C00'],
-            [20000, '#FF1493'],
-            [25000, '#00FA9A'],
-            [30000, '#0000FF']
+            [1000, '#7FFF00'],
+            [2000, '#DC143C'],
+            [3000, '#FF8C00'],
+            [4000, '#FF1493'],
+            [5000, '#00FA9A'],
+            [5965, '#0000FF']
           ]
         },
         'fill-outline-color': 'white'
